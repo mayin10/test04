@@ -124,6 +124,9 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+#ALLOWED_HOSTS = ['192.168.2.157','127.0.0.1']
+ALLOWED_HOSTS =['*']
+
 REST_FRAMEWORK = {
     "DEFAULT_SCHEMA_CLASS": "rest_framework.schemas.coreapi.AutoSchema",
     "DEFAULT_PAGINATION_CLASS": "rest_framework.pagination.PageNumberPagination",
